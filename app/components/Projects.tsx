@@ -20,29 +20,33 @@ const projects: Project[] = [
     title: "E-Learning Platform",
     description:
       "ระบบ e-learning ครบวงจร รองรับการสร้างคอร์ส เรียนออนไลน์ ระบบ Q&A และ certificate พัฒนาเป็นทีมสำหรับโปรเจกต์จบการศึกษา",
-    tech: ["Nuxt.js", "Go", "MySQL", "Docker", "Kubernetes"],
-    github: "https://github.com/kiadtiphong",
-    featured: true,
+    tech: ["Nuxt.js", "Go", "MySQL", "Docker",],
+    featured: false,
     demo: "https://elearning.csmju.com",
     image: "/images/banner/e-learning-csmju.png",
   },
   {
     title: "Comcamp23",
     description:
-      "เว็บไซต์ค่ายคอมพิวเตอร์ปี 2567 ของมหาวิทยาลัยแม่โจ้ ออกแบบด้วย Astro CSS",
-    tech: ["Vue.js", "JavaScript", "Astro CSS"],
-    github: "#",
+      "เว็บไซต์ประชาสัมพันธ์ ค่ายยุวชนคอมพิวเตอร์ประจำปี 2567 ณ มหาวิทยาลัยแม่โจ้ ",
+    tech: ["Vue.js", "JavaScript", "CSS"],
     demo: "https://www.cs.mju.ac.th/comcamp/",
     image: "/images/banner/comcamp23.png",
   },
   {
     title: "E-Sport Science Week67",
     description:
-      "เว็บไซต์การแข่งขัน e-sport rov สัปดาห์วิทยาศาสตร์ปี 2567 ของมหาวิทยาลัยแม่โจ้ ",
-    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    github: "#",
+      "เว็บไซต์ประกาศการแข่งขัน E-Sport ROV ในงานสัปดาห์วิทยาศาสตร์ประจำปี 2567 ณ มหาวิทยาลัยแม่โจ้ ",
+    tech: ["HTML", "JavaScript", "Tailwind CSS"],
     demo: "https://www.cs.mju.ac.th/e-sports_sciweek/",
     image: "/images/banner/e-port-rov-mju67.png",
+  },
+  {
+    title: "BoBill ",
+    description:
+      "ระบบจัดการและออกเอกสารใบแจ้งหนี้ (Invoice) สำหรับธุรกิจขนาดเล็ก",
+    tech: ["Next.js", "Node.js", "TypeScript", "PostgreSQL","Tailwind CSS", ],
+    image: "#",
   },
 ];
 

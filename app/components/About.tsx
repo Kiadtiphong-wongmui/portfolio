@@ -60,7 +60,7 @@ export default function About() {
               {/* Photo container */}
               <div className="absolute inset-4 rounded-full bg-surface-light overflow-hidden flex items-center justify-center glow">
                 <Image
-                  src="/images/banner/Kiadtiphong.png"
+                  src="/images/banner/Kiadtiphong.jpg"
                   alt="Kiadtiphong Profile"
                   fill
                   className="object-cover"
@@ -77,22 +77,20 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="text-2xl font-semibold mb-4">
-              นักศึกษาปี 4 สาย Computer Science
+              Full Stack Developer
             </h3>
             <p className="text-text-secondary leading-relaxed mb-4">
-              สวัสดีครับ! ผมชื่อ บอส หรือ เกียรติ์ติพงษ์ วงศ์มุ่ย เป็นนักศึกษาปี 4
-              สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้
-              ผมมีความสนใจในการพัฒนาเว็บแอปพลิเคชัน และการได้เรียนรู้เทคโนโลยีใหม่ๆ
+              สวัสดี! ผมชื่อ บอส เกียรติ์ติพงษ์ วงศ์มุ่ย จบการศึกษาจาก
+              สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ 
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              มีประสบการณ์ ตำแหน่ง Fullstack Developer รวมถึงการจัดการ
-              Infrastructure ด้วย Docker และ Kubernetes พร้อมเรียนรู้สิ่งใหม่ๆ
-              เสมอ
+              มีประสบการณ์ และเชี่ยวชาญด้าน Software Development, Infrastructure 
+              และ Server ระยะเวลา 1 ปี
             </p>
 
             {/* Info chips */}
             <div className="flex flex-wrap gap-3 mb-8">
-              {["กำลังศึกษา", "Chiang Mai, Thailand", "Open to work"].map(
+              {["กำลังศึกษา", "Chiang Rai, Thailand", "Open to work"].map(
                 (item) => (
                   <span
                     key={item}

@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl text-text-secondary mb-4"
         >
-          Full-Stack Developer & DevOps
+          Full-Stack Developer
         </motion.p>
 
         {/* Description */}
@@ -102,14 +102,14 @@ export default function Hero() {
           {[
             {
               icon: <FaGithub className="text-xl" />,
-              href: "https://github.com/Kiadtiphong307",
+              href: "https://github.com/Kiadtiphong-wongmui ",
               label: "GitHub",
             },
-            {
-              icon: <FaLinkedin className="text-xl" />,
-              href: "https://www.linkedin.com/in/kiadtiphong-wongmui-001376362",
-              label: "LinkedIn",
-            },
+            // {
+            //   icon: <FaLinkedin className="text-xl" />,
+            //   href: "https://www.linkedin.com/in/kiadtiphong-wongmui-001376362",
+            //   label: "LinkedIn",
+            // },
           ].map((social) => (
             <motion.a
               key={social.label}

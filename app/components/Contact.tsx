@@ -33,12 +33,12 @@ const socials = [
     href: "https://github.com/kiadtiphong307",
     color: "hover:text-white",
   },
-  {
-    icon: <FaLinkedin className="text-xl" />,
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/kiadtiphong-wongmui-001376362",
-    color: "hover:text-blue-400",
-  },
+  // {
+  //   icon: <FaLinkedin className="text-xl" />,
+  //   label: "LinkedIn",
+  //   href: "https://www.linkedin.com/in/kiadtiphong-wongmui-001376362",
+  //   color: "hover:text-blue-400",
+  // },
 ];
 
 export default function Contact() {
@@ -59,7 +59,7 @@ export default function Contact() {
             Contact
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            ติดต่อ<span className="gradient-text">ฉัน</span>
+            ติด<span className="gradient-text">ต่อ</span>
           </h2>
           <p className="text-text-muted mt-4 max-w-md mx-auto">
             สนใจร่วมงาน หรืออยากพูดคุย สามารถติดต่อผมได้เลยครับ

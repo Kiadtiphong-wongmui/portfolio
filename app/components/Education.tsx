@@ -18,9 +18,9 @@ const timeline: TimelineItem[] = [
     icon: <HiAcademicCap className="text-xl" />,
     title: "ปริญญาตรี สาขาวิทยาการคอมพิวเตอร์",
     subtitle: "มหาวิทยาลัยแม่โจ้",
-    date: "2022 - 2026 (กำลังศึกษา)",
+    date: "2022 - 2026 ",
     description:
-      "ศึกษาในสาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้",
+      "จบการศึกษาสาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้",
     type: "education",
   },
   {
@@ -29,18 +29,19 @@ const timeline: TimelineItem[] = [
     subtitle: "E-Learning Platform",
     date: "2025 - 2026",
     description:
-      "พัฒนาระบบ e-learning สำหรับมหาวิทยาลัยแม่โจ้ ทำงานเป็นทีม ตำแหน่ง Technical Lead (Full-stack & DevOps)",
+      "พัฒนาระบบ e-learning สำหรับมหาวิทยาลัยแม่โจ้ ร่วมกับทีม ตำแหน่ง Technical Lead ",
     type: "work",
   },
   {
     icon: <HiStar className="text-xl" />,
-    title: "ฝึกงาน",
+    title: "ฝึกงานแ",
     subtitle: "IGEARGEEK",
     date: "2025",
     description:
       "ฝึกงานจากบริษัท Startup IGEARGEEK ในตำแหน่ง Software Developer ",
     type: "Internship",
   },
+  
 ];
 
 const typeColor = {
@@ -55,7 +56,7 @@ export default function Experience() {
 
   return (
     <section
-      id="experience"
+      id="education"
       className="section-padding bg-surface/30"
       ref={ref}
     >
@@ -68,10 +69,10 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">
-            Experience & Education
+            Education&Experience
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            ประสบการณ์และ<span className="gradient-text">การศึกษา</span>
+            การศึกษาและ<span className="gradient-text">ประสบการณ์</span>
           </h2>
         </motion.div>
 
