@@ -85,7 +85,7 @@ export default function About() {
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
               มีประสบการณ์ และเชี่ยวชาญด้าน Full Stack, Infrastructure 
-              และ Server ระยะเวลา 1 ปี
+              และ Server พร้อมที่จะเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาตัวเองอยู่เสมอ
             </p>
 
             {/* Info chips */}

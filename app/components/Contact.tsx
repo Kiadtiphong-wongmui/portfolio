@@ -96,7 +96,7 @@ export default function Contact() {
             </div>
 
             {/* Social links */}
-            <div className="flex flex-col items-center">
+            {/* <div className="flex flex-col items-center">
               <p className="text-sm text-text-muted mb-6">Find me on</p>
               <div className="flex gap-4">
                 {socials.map((social) => (
@@ -113,7 +113,7 @@ export default function Contact() {
                   </motion.a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
