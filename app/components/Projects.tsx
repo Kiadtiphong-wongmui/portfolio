@@ -46,7 +46,7 @@ const projects: Project[] = [
     description:
       "ระบบจัดการและออกเอกสารใบแจ้งหนี้ (Invoice) สำหรับธุรกิจขนาดเล็ก",
     tech: ["Next.js", "Node.js", "TypeScript", "PostgreSQL","Tailwind CSS", ],
-    image: "#",
+    image: "/images/banner/bobill.png",
   },
 ];
 
