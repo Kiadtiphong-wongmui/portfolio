@@ -80,11 +80,11 @@ export default function About() {
               Full Stack Developer
             </h3>
             <p className="text-text-secondary leading-relaxed mb-4">
-              สวัสดี! ผมชื่อ บอส เกียรติ์ติพงษ์ วงศ์มุ่ย จบการศึกษาจาก
+              สวัสดี! ผมชื่อ บอส เกียรติ์ติพงษ์ วงศ์มุ่ย จบการศึกษา
               สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ 
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              มีประสบการณ์ และเชี่ยวชาญด้าน Software Development, Infrastructure 
+              มีประสบการณ์ และเชี่ยวชาญด้าน Full Stack, Infrastructure 
               และ Server ระยะเวลา 1 ปี
             </p>
 

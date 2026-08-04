@@ -22,7 +22,7 @@ const projects: Project[] = [
       "ระบบ e-learning ครบวงจร รองรับการสร้างคอร์ส เรียนออนไลน์ ระบบ Q&A และ certificate พัฒนาเป็นทีมสำหรับโปรเจกต์จบการศึกษา",
     tech: ["Nuxt.js", "Go", "MySQL", "Docker",],
     featured: false,
-    demo: "https://elearning.csmju.com",
+      // demo: "https://elearning.csmju.com",
     image: "/images/banner/e-learning-csmju.png",
   },
   {
@@ -30,7 +30,7 @@ const projects: Project[] = [
     description:
       "เว็บไซต์ประชาสัมพันธ์ ค่ายยุวชนคอมพิวเตอร์ประจำปี 2567 ณ มหาวิทยาลัยแม่โจ้ ",
     tech: ["Vue.js", "JavaScript", "CSS"],
-    demo: "https://www.cs.mju.ac.th/comcamp/",
+    // demo: "https://www.cs.mju.ac.th/comcamp/",
     image: "/images/banner/comcamp23.png",
   },
   {
@@ -38,7 +38,7 @@ const projects: Project[] = [
     description:
       "เว็บไซต์ประกาศการแข่งขัน E-Sport ROV ในงานสัปดาห์วิทยาศาสตร์ประจำปี 2567 ณ มหาวิทยาลัยแม่โจ้ ",
     tech: ["HTML", "JavaScript", "Tailwind CSS"],
-    demo: "https://www.cs.mju.ac.th/e-sports_sciweek/",
+    // demo: "https://www.cs.mju.ac.th/e-sports_sciweek/",
     image: "/images/banner/e-port-rov-mju67.png",
   },
   {
