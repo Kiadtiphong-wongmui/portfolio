@@ -90,7 +90,7 @@ export default function About() {
 
             {/* Info chips */}
             <div className="flex flex-wrap gap-3 mb-8">
-              {["กำลังศึกษา", "Chiang Rai, Thailand", "Open to work"].map(
+              {["จบการศึกษา", "Chiang Rai, Thailand", "Open to work"].map(
                 (item) => (
                   <span
                     key={item}
