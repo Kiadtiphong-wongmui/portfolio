@@ -2,7 +2,8 @@
 
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-import { HiAcademicCap, HiBriefcase, HiStar } from "react-icons/hi";
+import Link from "next/link";
+import { HiAcademicCap, HiBriefcase, HiStar, HiMap, HiArrowRight } from "react-icons/hi";
 
 type TimelineItem = {
   icon: React.ReactNode;
@@ -34,7 +35,7 @@ const timeline: TimelineItem[] = [
   },
   {
     icon: <HiStar className="text-xl" />,
-    title: "ฝึกงานแ",
+    title: "ฝึกงาน",
     subtitle: "IGEARGEEK",
     date: "2025",
     description:
@@ -103,10 +104,8 @@ export default function Experience() {
                 >
                   {item.icon}
                 </motion.div>
-                {/* Dotted connector line to next item */}
-                {i < timeline.length - 1 && (
-                  <div className="absolute top-12 left-1/2 -translate-x-1/2 h-20 w-px border-l-2 border-dotted border-primary/20" />
-                )}
+                {/* Dotted connector line to next item or CTA */}
+                <div className="absolute top-12 left-1/2 -translate-x-1/2 h-20 w-px border-l-2 border-dotted border-primary/20" />
               </div>
 
               {/* Content card */}
@@ -132,6 +131,29 @@ export default function Experience() {
               </div>
             </motion.div>
           ))}
+
+          {/* Activities CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.5, delay: timeline.length * 0.2 }}
+            className="flex flex-col items-center justify-center pt-6 text-center z-20 relative"
+          >
+            <Link
+              href="/activities"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-background bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-500 shadow-[0_0_25px_rgba(52,211,153,0.4)] hover:shadow-[0_0_35px_rgba(52,211,153,0.7)] hover:scale-105 active:scale-95 transition-all duration-300 overflow-hidden"
+            >
+              {/* Subtle light shimmer animation */}
+              <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+              
+              <HiMap className="text-xl text-background group-hover:rotate-12 transition-transform duration-300" />
+              <span className="tracking-wide font-bold">ดูกิจกรรมและงานจิตอาสาเพิ่มเติม</span>
+              <HiArrowRight className="text-xl group-hover:translate-x-1.5 transition-transform duration-300" />
+            </Link>
+            <p className="text-xs text-text-muted mt-3 flex items-center gap-1.5">
+              <span>🗺️</span> คลิกเพื่อเข้าดูแผนที่กิจกรรม รูปภาพ และรายละเอียดทั้งหมด
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>

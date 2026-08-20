@@ -51,7 +51,7 @@ export default function Certificates() {
           className="text-center mb-12"
         >
           <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3 flex items-center justify-center gap-2">
-            <HiSparkles className="text-primary" /> Certifications & Awards
+            <HiSparkles className="text-primary" /> Certifications
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
             เกียรติบัตรและ<span className="gradient-text">ใบรับรอง</span>
