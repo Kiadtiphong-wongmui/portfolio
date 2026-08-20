@@ -147,12 +147,9 @@ export default function Experience() {
               <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
               
               <HiMap className="text-xl text-background group-hover:rotate-12 transition-transform duration-300" />
-              <span className="tracking-wide font-bold">ดูกิจกรรมและงานจิตอาสาเพิ่มเติม</span>
+              <span className="tracking-wide font-bold">ดูรายละเอียดกิจกรรมเพิ่มเติม</span>
               <HiArrowRight className="text-xl group-hover:translate-x-1.5 transition-transform duration-300" />
             </Link>
-            <p className="text-xs text-text-muted mt-3 flex items-center gap-1.5">
-              <span>🗺️</span> คลิกเพื่อเข้าดูแผนที่กิจกรรม รูปภาพ และรายละเอียดทั้งหมด
-            </p>
           </motion.div>
         </div>
       </div>

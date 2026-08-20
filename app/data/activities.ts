@@ -1,12 +1,7 @@
-export type ActivityCategory = "all" | "faculty" | "volunteer" | "academic" | "other";
-
 export type ActivityItem = {
   id: string;
   title: string;
-  category: "faculty" | "volunteer" | "academic" | "other";
-  categoryLabel: string;
   locationName: string;
-  coordinates: [number, number]; // [lat, lng]
   date: string;
   role: string;
   description: string;
@@ -14,69 +9,116 @@ export type ActivityItem = {
   skills: string[];
 };
 
+export type TextActivity = {
+  id: string;
+  number: number;
+  title: string;
+  description?: string;
+  date?: string;
+};
+
+export const textActivities: TextActivity[] = [
+  {
+    id: "text-act-1",
+    number: 1,
+    title: "ได้รับรางวัลด้านผลการเรียนดีเด่น ประจำปีการศึกษา 2025, 2024 และ 2023",
+    date: "ปี 2023 - 2025",
+  },
+  {
+    id: "text-act-2",
+    number: 2,
+    title: "โครงการค่ายยุวชนคอมพิวเตอร์ ครั้งที่ 21 - 23",
+    date: "ปี 2023 - 2025",
+  },
+  {
+    id: "text-act-3",
+    number: 3,
+    title: "ผู้ช่วยสอนในรายวิชา ฐานข้อมูลเบื้องต้น",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-4",
+    number: 4,
+    title: "โครงการ Link Cabling & Network Solution มหาวิทยาลัยแม่โจ้",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-5",
+    number: 5,
+    title: "โครงการอบรมเตรียมความรู้พื้นฐานสำหรับนักศึกษาใหม่ สาขาวิทยาการคอมพิวเตอร์",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-6",
+    number: 6,
+    title: "ผู้แทนหลักสูตรวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ ในการประเมินคุณภาพการศึกษาภายใน",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-7",
+    number: 7,
+    title: "เข้าร่วมการประชุมวิชาการนานาชาติ ECTIDAMT & NCON",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-8",
+    number: 8,
+    title: "กิจกรรมประชาสัมพันธ์หลักสูตรและจัดนิทรรศการ ณ มหาวิทยาลัยแม่โจ้ งานเกษตรครบรอบ 90 ปี มหาวิทยาลัยแม่โจ้",
+    date: "ปี 2024",
+  },
+  {
+    id: "text-act-9",
+    number: 9,
+    title: "โครงการพัฒนาทักษะด้านปัญญาประดิษฐ์ (AI) ขั้นพื้นฐาน สำหรับนักเรียน",
+    date: "ปี 2023 - 2024",
+  },
+  {
+    id: "text-act-10",
+    number: 10,
+    title: "โครงการอบรมเชิงปฏิบัติการการสร้างโมเดล 3 มิติ ด้วยโปรแกรม Tinkercad",
+    date: "ปี 2023 - 2024",
+  },
+  {
+    id: "text-act-11",
+    number: 11,
+    title: "เป็นหัวหน้าฝ่ายสื่อประชาสัมพันธ์ CSMJU STUDIO",
+    date: "ปี 2023 - 2024",
+  },
+  {
+    id: "text-act-12",
+    number: 12,
+    title: "โครงการอบรมทักษะแบบ AR ระดับเบื้องต้น สำหรับนักเรียน",
+    date: "ปี 2023",
+  },
+];
+
 export const sampleActivities: ActivityItem[] = [
   {
-    id: "act-mju-openhouse",
-    title: "กิจกรรม Open House และแนะนำสาขาวิทยาการคอมพิวเตอร์",
-    category: "faculty",
-    categoryLabel: "งานคณะ / มหาวิทยาลัย",
-    locationName: "มหาวิทยาลัยแม่โจ้ (เชียงใหม่)",
-    coordinates: [18.8931, 99.0143],
-    date: "พฤศจิกายน 2025",
-    role: "ทีมจัดกิจกรรม & วิทยากรประจำฐานแนะนำหลักสูตร",
+    id: "id_video_workshop",
+    title: "โครงการอบรมเชิงปฏัติการการตัดต่อวีดีโอเบื้องต้น",
+    locationName: "โรงเรียนนวมินทราชูทิศ พายัพ จังหวัดเชียงใหม่",
+    date: "สิงหาคม 2567",
+    role: "ผู้ช่วยสอน",
     description:
-      "เป็นตัวแทนนักศึกษาและสต๊าฟประจำฐานกิจกรรมในงาน Open House แนะนำหลักสูตรวิทยาการคอมพิวเตอร์แก่นักเรียนระดับมัธยมศึกษา สาธิตมินิโปรเจกต์ไอที นำเสนอแนวทางการศึกษาและตอบคำถามเกี่ยวกับการพัฒนาซอฟต์แวร์",
+      "อบรมให้กับนักเรียนระดับชั้นมัธยมศึกษาตอนต้นและตอนปลาย ให้มีความรู้ความเข้าใจในการตัดต่อวีดีโอเบื้องต้น",
     images: [
-      "/images/activities/openhouse_1.jpg",
+      "/activities/A1.jpg",
+      "/activities/A2.jpg",
     ],
-    skills: ["Public Speaking", "Teamwork", "Event Planning", "Communication"],
+    skills: ["Education", "Teaching", "Video Editing"],
   },
   {
-    id: "act-volunteer-camp",
-    title: "กิจกรรมค่ายจิตอาสาพัฒนาโรงเรียนและชุมชน",
-    category: "volunteer",
-    categoryLabel: "จิตอาสา / ลงพื้นที่",
-    locationName: "โรงเรียนชุมชนบ้านป่าแดด (เชียงใหม่)",
-    coordinates: [18.7562, 98.9831],
-    date: "มกราคม 2025",
-    role: "อาสาสมัครพัฒนาสนามเด็กเล่น & ปรับปรุงห้องคอมพิวเตอร์",
-    description:
-      "ลงพื้นที่ทำกิจกรรมจิตอาสาพัฒนาชุมชนร่วมกับชมรม ช่วยทาสี ปรับปรุงภูมิทัศน์โรงเรียน และช่วยตรวจสอบติดตั้งระบบคอมพิวเตอร์ห้องเรียนไอที เพื่อให้น้องๆ ในชุมชนมีอุปกรณ์และสื่อการเรียนรู้ที่พร้อมใช้งาน",
-    images: [
-      "/images/activities/volunteer_1.jpg",
-    ],
-    skills: ["Volunteer", "Community Service", "IT Maintenance", "Leadership"],
-  },
-  {
-    id: "act-tech-workshop",
-    title: "การอบรมเชิงปฏิบัติการพัฒนาเว็บแอปพลิเคชันด้วย Next.js & Tailwind",
-    category: "academic",
-    categoryLabel: "วิชาการ / อบรม",
+    id: "id_ecti_work",
+    title: "งานประชุมวิชาการระดับนานาชาติ (ECTI DAMT and NCON 2024)",
     locationName: "คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้",
-    coordinates: [18.8925, 99.0150],
-    date: "สิงหาคม 2025",
-    role: "ผู้ช่วยวิทยากร (Teaching Assistant)",
+    date: "มกราคม 2567",
+    role: "ฝ่ายประสานงาน",
     description:
-      "ทำหน้าที่เป็นผู้ช่วยวิทยากร คอยให้คำแนะนำแก่นักศึกษารุ่นน้องในการฝึกเขียนโค้ด React, Next.js และ Tailwind CSS ตรวจสอบข้อผิดพลาดของโค้ด (Debugging) และอธิบายแนวคิด Component-Based Architecture",
+      "ช่วยอำนวยความสะดวก ประสานงาน และบันทึกภาพต่างๆภายในงานประชุมวิชาการ",
     images: [
-      "/images/activities/workshop_1.jpg",
+      "/activities/A3.jpg",
+      "/activities/A4.jpg",
     ],
-    skills: ["Mentoring", "React / Next.js", "Debugging", "Teaching Assistant"],
-  },
-  {
-    id: "act-chiangrai-event",
-    title: "กิจกรรมสัมมนานวัตกรรมดิจิทัลและการแข่งขันไอทีระดับภูมิภาค",
-    category: "other",
-    categoryLabel: "กิจกรรมอื่นๆ",
-    locationName: "จังหวัดเชียงราย",
-    coordinates: [19.9071, 99.8325],
-    date: "มีนาคม 2025",
-    role: "ตัวแทนเข้าร่วมสัมมนา & สต๊าฟประสานงาน",
-    description:
-      "เข้าร่วมงานสัมมนาเทคโนโลยีดิจิทัลและนวัตกรรมใหม่ๆ ของภาคเหนือ พร้อมร่วมเป็นสต๊าฟช่วยประสานงานดูแลสถานที่และอำนวยความสะดวกแก่ผู้เข้าแข่งขันในงาน",
-    images: [
-      "/images/activities/chiangrai_1.jpg",
-    ],
-    skills: ["Coordination", "Networking", "Event Support"],
-  },
+    skills: ["Coordination", "Communication", "Documentation"],
+  }
 ];

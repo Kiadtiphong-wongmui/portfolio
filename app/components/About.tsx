@@ -77,14 +77,15 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="text-2xl font-semibold mb-4">
-              Full Stack Developer
+              สวัสดีครับ!!!
             </h3>
             <p className="text-text-secondary leading-relaxed mb-4">
-              สวัสดีครับ! ผมชื่อ บอส เกียรติ์ติพงษ์ วงศ์มุ่ย จบการศึกษา
+              ผมชื่อ บอส เกียรติ์ติพงษ์ วงศ์มุ่ย จบการศึกษาจาก
               สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ 
             </p>
             <p className="text-text-secondary leading-relaxed mb-8">
-              สนใจในตำแหน่ง Full Stack และมีประสบการณ์ในการพัฒนาเว็บไซต์ในช่วงเรียนมหาวิทยาลัย 
+              สนใจในตำแหน่ง Software Developer หรือ IT Support และมีประสบการณ์ในการพัฒนาเว็บไซต์
+              รวมถึงการให้ความช่วยเหลือในการใช้เทคโนโลยี ในช่วงเรียนมหาวิทยาลัย 
               พร้อมที่จะเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาตัวเองอยู่เสมอ
             </p>
 

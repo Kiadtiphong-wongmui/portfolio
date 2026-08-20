@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl text-text-secondary mb-4"
         >
-          Full-Stack Developer
+          Welcome to my portfolio
         </motion.p>
 
         {/* Description */}
