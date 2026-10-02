@@ -60,7 +60,7 @@ export default function About() {
               {/* Photo container */}
               <div className="absolute inset-4 rounded-full bg-surface-light overflow-hidden flex items-center justify-center glow">
                 <Image
-                  src="/images/banner/Kiadtiphong.jpg"
+                  src="/images/banner/Kiadtiphong_office.jpg"
                   alt="Kiadtiphong Profile"
                   fill
                   className="object-cover"

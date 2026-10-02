@@ -65,7 +65,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Go to beyond
+          Welcome to protfolio
         </motion.p>
 
         {/* CTA Buttons */}
